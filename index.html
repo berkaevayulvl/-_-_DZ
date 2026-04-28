@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Анна Иванова — нутрициолог. Индивидуальное сопровождение и метаболическое питание.">
+  <title>Анна Иванова — нутрициолог</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__inner">
+      <a class="logo" href="#top">Анна Иванова</a>
+      <button class="nav-toggle" type="button" aria-label="Открыть меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" aria-label="Основная навигация">
+        <a href="#about">О специалисте</a>
+        <a href="#consultations">Консультации</a>
+        <a href="#courses">Курсы</a>
+        <a href="#metabolic">Метаболическое питание</a>
+        <a href="#healthy-products">Продукты</a>
+        <a href="#services">Услуги</a>
+        <a href="#checklist">Чек-лист</a>
+        <a href="#contact" class="nav__cta">Связаться</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero__content">
+        <p class="hero__eyebrow">Нутрициолог</p>
+        <h1 class="hero__title">Анна Иванова</h1>
+        <p class="hero__lead">Помогаю выстроить устойчивые пищевые привычки и поддержать метаболизм — без жёстких диет и чувства вины за еду.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#contact">Записаться на консультацию</a>
+          <a class="btn btn--ghost" href="#metabolic">Что такое метаболическое питание</a>
+        </div>
+      </div>
+      <div class="hero__visual">
+        <!-- Картинка 1: ожидаемый результат работы — «Энергия и здоровье» -->
+        <figure class="hero__figure">
+          <img
+            class="hero__img"
+            src="images/energy-health.png"
+            width="640"
+            height="640"
+            alt="Энергия и здоровье: женщина со стаканом зелёного смузи на светлой кухне"
+            loading="eager"
+            decoding="async"
+          >
+          <figcaption class="hero__figure-caption">Энергия и здоровье</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="home-offers-title">
+      <div class="container">
+        <h2 id="home-offers-title" class="section__title">С чем можно прийти</h2>
+        <p class="section__intro">Два основных формата работы — личный разбор ситуации и структурированное обучение в удобном темпе.</p>
+        <div class="services services--two">
+          <!-- Картинка 3: персональные консультации -->
+          <article id="consultations" class="service-card service-card--highlight service-card--with-photo">
+            <div class="service-card__media">
+              <img
+                src="images/consultations.png"
+                width="800"
+                height="500"
+                alt="Персональная консультация: нутрициолог и клиент за столом со свежими овощами"
+                loading="lazy"
+                decoding="async"
+              >
+            </div>
+            <div class="service-card__inner">
+              <h3>Индивидуальные консультации</h3>
+              <p>Разбор рациона, целей и ограничений в формате один на один. Понятные рекомендации и план действий под ваш график и образ жизни.</p>
+              <div class="service-card__cta"><a class="btn btn--ghost" href="#contact">Записаться</a></div>
+            </div>
+          </article>
+          <!-- Картинка 5: готовим и питаемся правильно (обучающие курсы) -->
+          <article id="courses" class="service-card service-card--with-photo">
+            <div class="service-card__media">
+              <img
+                src="images/cooking-right.png"
+                width="800"
+                height="500"
+                alt="Готовим и питаемся правильно: приготовление блюд из овощей на кухне"
+                loading="lazy"
+                decoding="async"
+              >
+            </div>
+            <div class="service-card__inner">
+              <p class="service-card__tagline">Готовим и питаемся правильно</p>
+              <h3>Обучающие курсы</h3>
+              <p>Тематические программы: база сбалансированного питания, метаболические ориентиры и практические задания — чтобы закрепить навыки без спешки.</p>
+              <div class="service-card__cta"><a class="btn btn--ghost" href="#contact">Узнать о запуске</a></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section section--alt">
+      <div class="container">
+        <h2 class="section__title">О специалисте</h2>
+        <div class="about">
+          <div class="about__text">
+            <p>Я сопровождаю людей, которые хотят улучшить самочувствие, энергию и отношение к еде. Работаю с реальными продуктами и привычками — так, чтобы план был выполнимым в повседневной жизни.</p>
+            <p>Подход основан на научно обоснованных принципах питания и бережном изменении режима дня, сна и стресса — всё это влияет на метаболизм и результат.</p>
+          </div>
+          <ul class="about__list">
+            <li>Индивидуальный разбор рациона и целей</li>
+            <li>Поддержка на этапе внедрения привычек</li>
+            <li>Объяснение «почему так», а не только «что есть»</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="metabolic" class="section">
+      <div class="container">
+        <h2 class="section__title">Метаболическое питание</h2>
+        <p class="section__intro">Это не модная диета, а структура питания, которая учитывает энергозатраты, регуляцию сахара в крови и восстановление организма. Цель — стабильная энергия, комфортное пищеварение и предсказуемый прогресс.</p>
+        <div class="grid-3">
+          <article class="feature">
+            <h3 class="feature__title">Ритм приёмов пищи</h3>
+            <p class="feature__text">Согласование режима с вашим графиком сна, работы и тренировок.</p>
+          </article>
+          <article class="feature">
+            <h3 class="feature__title">Баланс нутриентов</h3>
+            <p class="feature__text">Белки, жиры и углеводы в пропорциях, подходящих именно вам.</p>
+          </article>
+          <article class="feature">
+            <h3 class="feature__title">Мониторинг самочувствия</h3>
+            <p class="feature__text">Корректировки по сигналам тела — сытость, аппетит, активность.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Картинки 2 и 4: здоровые продукты питания -->
+    <section id="healthy-products" class="section section--alt" aria-labelledby="healthy-products-title">
+      <div class="container">
+        <h2 id="healthy-products-title" class="section__title">Здоровые продукты питания</h2>
+        <p class="section__intro">Сбалансированные тарелки и натуральные ингредиенты — основа метаболического подхода без жёстких ограничений.</p>
+        <div class="photo-grid">
+          <figure class="photo-tile">
+            <img
+              src="images/healthy-products-1.png"
+              width="800"
+              height="600"
+              alt="Завтрак: яйца, шпинат, ягоды и авокадо на деревянном столе"
+              loading="lazy"
+              decoding="async"
+            >
+          </figure>
+          <figure class="photo-tile">
+            <img
+              src="images/healthy-products-2.png"
+              width="800"
+              height="600"
+              alt="Лосось, зелень, авокадо и ягоды — пример сбалансированного рациона"
+              loading="lazy"
+              decoding="async"
+            >
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <h2 class="section__title">Услуги</h2>
+        <div class="services">
+          <article class="service-card">
+            <h3>Первичная консультация</h3>
+            <p>Сбор анамнеза, целей и ограничений. Первые рекомендации и план действий.</p>
+          </article>
+          <article class="service-card">
+            <h3>Сопровождение</h3>
+            <p>Регулярные созвоны, корректировка меню и ответы на вопросы в процессе.</p>
+          </article>
+          <article class="service-card service-card--highlight">
+            <h3>Метаболический протокол</h3>
+            <p>Углублённая работа с метаболическим питанием: структура дня, меню и контрольные точки.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="checklist" class="section section--checklist" aria-labelledby="checklist-title">
+      <div class="container">
+        <h2 id="checklist-title" class="section__title">Чек-лист здорового питания</h2>
+        <p class="section__intro">Отметьте пункты, которые чаще всего выполняются в вашем обычном режиме — так вы получите ориентировочную оценку соответствия рациона общим критериям сбалансированного питания. Это не диагноз и не замена консультации специалиста.</p>
+
+        <form class="checklist" id="nutrition-checklist" novalidate>
+          <div class="checklist__groups">
+            <fieldset class="checklist__group">
+              <legend class="checklist__legend">Режим и привычки</legend>
+              <label class="checklist__item">
+                <input type="checkbox" name="c1" value="1">
+                <span class="checklist__text">Ем 3 и более раза в день, без длительных «голодных» промежутков</span>
+              </label>
+              <label class="checklist__item">
+                <input type="checkbox" name="c2" value="1">
+                <span class="checklist__text">Пью воду в течение дня (не только чай и кофе)</span>
+              </label>
+              <label class="checklist__item">
+                <input type="checkbox" name="c3" value="1">
+                <span class="checklist__text">Слежу за сном (в среднем около 7 часов и более)</span>
+              </label>
+              <label class="checklist__item">
+                <input type="checkbox" name="c4" value="1">
+                <span class="checklist__text">Планирую покупки и меню хотя бы на несколько дней вперёд</span>
+              </label>
+            </fieldset>
+
+            <fieldset class="checklist__group">
+              <legend class="checklist__legend">Рацион и продукты</legend>
+              <label class="checklist__item">
+                <input type="checkbox" name="c5" value="1">
+                <span class="checklist__text">Ежедневно включаю овощи (свежие или приготовленные)</span>
+              </label>
+              <label class="checklist__item">
+                <input type="checkbox" name="c6" value="1">
+                <span class="checklist__text">В основных приёмах пищи есть источник белка (мясо, рыба, творог, бобовые и т.д.)</span>
+              </label>
+              <label class="checklist__item">
+                <input type="checkbox" name="c7" value="1">
+                <span class="checklist__text">Чаще выбираю цельнозерновой хлеб, крупы или «медленные» углеводы вместо только фастфуда и сладостей</span>
+              </label>
+              <label class="checklist__item">
+                <input type="checkbox" name="c8" value="1">
+                <span class="checklist__text">Ограничиваю сладкие напитки и пакетированные соки</span>
+              </label>
+              <label class="checklist__item">
+                <input type="checkbox" name="c9" value="1">
+                <span class="checklist__text">Ограничиваю колбасы, снеки и готовые полуфабрикаты «на каждый день»</span>
+              </label>
+              <label class="checklist__item">
+                <input type="checkbox" name="c10" value="1">
+                <span class="checklist__text">Ем рыбу или другие источники омега-3 несколько раз в неделю (или по рекомендации врача)</span>
+              </label>
+            </fieldset>
+
+            <fieldset class="checklist__group">
+              <legend class="checklist__legend">Осознанность</legend>
+              <label class="checklist__item">
+                <input type="checkbox" name="c11" value="1">
+                <span class="checklist__text">Редко устраиваю «срывы» после жёстких ограничений — стараюсь питаться стабильно</span>
+              </label>
+              <label class="checklist__item">
+                <input type="checkbox" name="c12" value="1">
+                <span class="checklist__text">На перекус выбираю сочетание белка и клетчатки, а не только сладкое</span>
+              </label>
+            </fieldset>
+          </div>
+
+          <div class="checklist__result" role="region" aria-live="polite" aria-labelledby="checklist-result-heading">
+            <h3 id="checklist-result-heading" class="checklist__result-title">Оценка соответствия</h3>
+            <div class="checklist__meter" aria-hidden="true">
+              <div class="checklist__meter-track">
+                <div class="checklist__meter-fill" id="checklist-meter-fill" style="width: 0%"></div>
+              </div>
+            </div>
+            <p class="checklist__score" id="checklist-score">Отмечено пунктов: 0 из 12 (0%)</p>
+            <p class="checklist__verdict" id="checklist-verdict">Отметьте пункты выше — появится краткая интерпретация.</p>
+            <button type="button" class="btn btn--ghost checklist__reset" id="checklist-reset">Сбросить отметки</button>
+          </div>
+
+          <p class="checklist__disclaimer">Результат носит ознакомительный характер. Индивидуальные нормы зависят от здоровья, целей и образа жизни — уточняйте на консультации.</p>
+        </form>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container contact__inner">
+        <div class="contact__copy">
+          <h2 class="section__title">Связаться</h2>
+          <p>Напишите, чем могу помочь — подберём формат консультации. Ответ обычно в течение рабочего дня.</p>
+        </div>
+        <div class="contact__actions">
+          <!-- mailto: открывает почтовый клиент по умолчанию (Outlook, Почта Windows, Thunderbird и т.д.) -->
+          <a
+            class="btn btn--primary btn--block"
+            href="mailto:BerkaevaYulVl@gmail.com?subject=%D0%97%D0%B0%D0%BF%D1%80%D0%BE%D1%81%20%D1%81%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0"
+            title="Открыть почту: новое письмо на BerkaevaYulVl@gmail.com"
+            aria-label="Написать письмо на электронную почту BerkaevaYulVl@gmail.com"
+          >Написать на почту<br><span class="contact__mail-on-btn">BerkaevaYulVl@gmail.com</span></a>
+          <!-- Ссылка t.me открывает чат в приложении или веб-версии Telegram -->
+          <a
+            class="btn btn--ghost btn--block"
+            href="https://t.me/Yuliya_Berkaeva"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Открыть Telegram: личные сообщения @Yuliya_Berkaeva"
+            aria-label="Написать заявку в Telegram, личные сообщения Юлии Беркаевой"
+          >Написать в Telegram</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© Анна Иванова, нутрициолог</span>
+      <span class="footer__note">Информация на сайте не заменяет очную консультацию врача.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
